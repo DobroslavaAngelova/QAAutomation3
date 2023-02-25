@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="3" verbose="1" name="QAAutomation3"
+       annotations="JDK" parallel="tests">
+
+    <test name="LoginSuite">
+        <classes>
+            <class name="web.browser.test.TestSuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="WrongLoginSuite">
+        <classes>
+            <class name="web.browser.test.TestUnSuccessfulLogin"/>
+        </classes>
+    </test>
+    <test name="ProductSuite">
+        <classes>
+            <class name="web.browser.test.TestProducts"/>
+        </classes>
+    </test>
+</suite>
